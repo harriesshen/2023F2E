@@ -1,0 +1,50 @@
+@import url("./baseStyle.css");
+
+footer {
+  padding: 5% 10%;
+  background: var(--bg-color-2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.footer-left .mark-man .numberIcon {
+  width: 32px;
+  height: 32px;
+}
+.footer-left .mark-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-left .mark-icon .footer-icon {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.copyRight {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-right h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.footer-right .footer-right-text {
+  font-weight: 500;
+}

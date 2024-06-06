@@ -1,0 +1,50 @@
+@import url("./baseStyle.css");
+
+.advocate {
+  background: var(--bg-color-2);
+}
+
+.advocate-card {
+  width: 100%;
+  background: var(--bg-color-1);
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.advocate-card-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.advocate-card-right {
+  width: 100%;
+}
+
+.advocate-card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.advocate-main-text {
+  color: var(--primary-textColor);
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.advocate-main-text span {
+  color: var(--primary-color);
+}
+
+.advocate-second-text {
+  font-weight: 500;
+  color: var(--primary-textColor);
+}

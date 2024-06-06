@@ -1,0 +1,75 @@
+@import url("./baseStyle.css");
+
+header {
+  padding: 16px 24px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent;
+  box-sizing: border-box;
+}
+.headerContainer {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color-1);
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .headerLeft img {
+  width: 52px;
+  height: 43px;
+}
+
+header .headerLeft span {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.headerCenter nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+.headerCenter nav ul li a {
+  text-decoration: none;
+  color: var(--primary-textColor);
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+.headerCenter nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width 1s ease-in-out;
+}
+
+.headerCenter nav ul li a:hover::after,
+.headerCenter nav ul li a.active::after {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.headerRight {
+  display: flex;
+  gap: 16px;
+}
+
+.header-fixed {
+  background: var(--bg-color-1-alpha);
+  backdrop-filter: blur(10px);
+}
