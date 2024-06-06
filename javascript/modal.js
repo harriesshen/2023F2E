@@ -21,7 +21,7 @@ const openModal = (headerTitle, titleText, dateTime, imgSrc, description) => {
   modal.style.display = "block";
   headerTitle.textContent = headerTitle;
   smallTitle.textContent = titleText;
-  img.src = `../images/${imgSrc}`;
+  img.src = `./images/${imgSrc}`;
   title.textContent = titleText;
   date.textContent = dateTime;
   desc.style.height = `${
