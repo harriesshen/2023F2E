@@ -1,0 +1,65 @@
+@import url("./baseStyle.css");
+
+.latestEvents {
+  background: #fff;
+  flex-direction: column;
+  gap: 10px;
+}
+.latestEvents-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.latestEvents-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.latestEvents-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.latestEvents-card-right .card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.latestEvents-card-right .card .desc-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.latestEvents-card-left .date,
+.latestEvents-card-right .desc-right .date {
+  color: var(--second-textColor);
+}
+.latestEvents-card-left .card-title,
+.latestEvents-card-right .desc-right .card-title {
+  color: var(--primary-textColor);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.latestEvents-card-left .card-desc,
+.latestEvents-card-right .desc-right .card-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

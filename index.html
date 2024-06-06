@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/baseStyle.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/marquee.css" />
+    <link rel="stylesheet" href="./styles/advocate.css" />
+    <link rel="stylesheet" href="./styles/latestEvents.css" />
+    <link rel="stylesheet" href="./styles/policyIssues.css" />
+    <link rel="stylesheet" href="./styles/donate.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="headerLeft">
+          <img src="./images/logo.png" alt="logo" />
+          <span>喵立翰 Miao Li-Han</span>
+        </div>
+        <div class="headerCenter">
+          <nav>
+            <ul>
+              <li><a href="#advocate">候選人主張</a></li>
+              <li><a href="#policyIssues">政策議題</a></li>
+              <li><a href="#donate">小額捐款</a></li>
+              <li><a href="#donate">民眾服務信箱</a></li>
+              <li><a href="#latestEvents">最新活動</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="headerRight mark-icon">
+          <img src="./images/facebook.png" alt="" />
+          <img src="./images/instagram.png" alt="" />
+          <img src="./images/youtube.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- banner -->
+      <div class="banner-container">
+        <div class="primary-gradient big Mantou-Sans">台灣的明天 喵先鋪路</div>
+        <div class="banner-text">
+          <h3 class="left">2024 立委參選人</h3>
+          <div class="right">
+            <h2 class="numberIcon">3</h2>
+            <h1 class="">喵立翰 Miao Li-Han</h1>
+          </div>
+        </div>
+        <img src="./images/banner.png" alt="" />
+      </div>
+      <!-- End of banner -->
+
+      <!-- marquee 跑馬燈 -->
+      <div class="marquee">
+        <div class="marquee-text">
+          為喵星人，護台灣！ 從喵的眼中，看見台灣 喵的未來，人的希望
+        </div>
+        <div class="marquee-text">
+          為喵星人，護台灣！ 從喵的眼中，看見台灣 喵的未來，人的希望
+        </div>
+      </div>
+      <!-- End of marquee -->
+
+      <!-- 候選人主張 advocate-->
+      <section id="advocate">
+        <div class="advocate section-container">
+          <div class="advocate-card">
+            <div class="advocate-card-left">
+              <div class="section-logo">ADVOCATE</div>
+              <div class="section-title primary-gradient Mantou-Sans">
+                候選人主張
+              </div>
+              <h3 class="advocate-main-text">
+                我堅信 !
+                藉由推動更完善的<span>貓咪福利</span>和相關政策，更是間接地投資於<span>台灣的未來</span>。
+              </h3>
+              <h5 class="advocate-second-text">
+                畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的
+                GDP 經濟帶來巨大效益。<br />
+                因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。
+              </h5>
+            </div>
+            <div class="advocate-card-right">
+              <img src="./images/advocate.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of advocate -->
+
+      <!-- 最新消息 latestEvents -->
+      <section id="latestEvents">
+        <div class="latestEvents section-container">
+          <div class="section-logo">LATEST EVENTS</div>
+          <div class="section-title primary-gradient Mantou-Sans">最新消息</div>
+          <div class="latestEvents-card-container">
+            <div
+              class="latestEvents-card-left"
+              onclick="openModal('最新消息','參與台北寵物論壇，爭取貓咪友善環境','2023/12/26',
+              'events-left.png',
+              '炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的VIP休憩空間')"
+            >
+              <div>
+                <img src="./images/events-left.png" alt="" />
+              </div>
+              <div class="date">2023/12/26</div>
+              <div class="card-title">參與台北寵物論壇，爭取貓咪友善環境</div>
+              <div class="card-desc">
+                炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
+                VIP 休憩空間。
+              </div>
+            </div>
+            <div class="latestEvents-card-right">
+              <div
+                class="card"
+                onclick="openModal(`最新消息`,`掃街模式開啟！帶著你的貓耳，來和我一起走！`,
+                `2023/12/24`,`events-right-1.png`,
+                `街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！`
+              )"
+              >
+                <div class="img-left">
+                  <img src="./images/events-right-1.png" alt="" />
+                </div>
+                <div class="desc-right">
+                  <div class="date">2023/12/24</div>
+                  <div class="card-title">
+                    掃街模式開啟！帶著你的貓耳，來和我一起走！
+                  </div>
+                  <div class="card-desc">
+                    街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card"
+                onclick="openModal(`最新消息`,`收容所模特兒大比拼！`,
+                `2023/12/20`,`events-right-2.png`,
+                `今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！`
+              )"
+              >
+                <div class="img-left">
+                  <img src="./images/events-right-2.png" alt="" />
+                </div>
+                <div class="desc-right">
+                  <div class="date">2023/12/20</div>
+                  <div class="card-title">收容所模特兒大比拼！</div>
+                  <div class="card-desc">
+                    今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card"
+                onclick="openModal(`最新消息`,`參與台北寵物論壇，爭取貓咪友善環境`,
+              `2023/12/26`,`events-right-3.png`,
+              `炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！`
+            )"
+              >
+                <div class="img-left">
+                  <img src="./images/events-right-3.png" alt="" />
+                </div>
+                <div class="desc-right">
+                  <div class="date">2023/12/26</div>
+                  <div class="card-title">
+                    參與台北寵物論壇，爭取貓咪友善環境
+                  </div>
+                  <div class="card-desc">
+                    炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！
+                  </div>
+                </div>
+              </div>
+              <button class="more-button">
+                <div>查看更多</div>
+                <div>
+                  <svg width="50" height="50" viewBox="0 0 50 50">
+                    <!-- 线条部分 -->
+                    <line
+                      x1="10"
+                      y1="27"
+                      x2="30"
+                      y2="27"
+                      stroke="black"
+                      stroke-width="5"
+                    />
+                    <!-- 箭头部分 -->
+                    <polygon points="30,17 40,27 30,37" fill="black" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of latestEvents -->
+
+      <!-- 政策議題 policyIssues -->
+      <section id="policyIssues">
+        <div class="policyIssues section-container">
+          <div class="section-logo">POLICY ISSUES</div>
+          <div class="section-title primary-gradient Mantou-Sans">政策議題</div>
+          <div class="policyIssues-content">
+            <div class="card">
+              <h4>
+                為毛孩子謀福利！<br />
+                推動寵物醫療保障方案
+              </h4>
+              <div><img src="./images/policy-1.png" alt="" /></div>
+            </div>
+            <div class="card">
+              <h4>
+                打造休閒天堂！<br />
+                推廣寵物休閒與娛樂場所
+              </h4>
+              <div><img src="./images/policy-2.png" alt="" /></div>
+            </div>
+            <div class="card">
+              <h4>推廣寵物飼養教育，讓愛更加專業</h4>
+              <div><img src="./images/policy-3.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of policyIssues -->
+
+      <!-- 小額捐款 donate -->
+      <section id="donate">
+        <div class="section-container">
+          <div class="donate">
+            <div class="donate-card">
+              <div class="Mantou-Sans title">小額支持喵喵</div>
+              <div class="desc">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
+              <div class="donate-button">
+                <button class="more-button">
+                  <div>小額捐款</div>
+                  <div>
+                    <svg width="50" height="50" viewBox="0 0 50 50">
+                      <!-- 线条部分 -->
+                      <line
+                        x1="10"
+                        y1="27"
+                        x2="30"
+                        y2="27"
+                        stroke="black"
+                        stroke-width="5"
+                      />
+                      <!-- 箭头部分 -->
+                      <polygon points="30,17 40,27 30,37" fill="black" />
+                    </svg>
+                  </div>
+                </button>
+                <div></div>
+                <div><img src="./images/donate.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="donate-card">
+              <div class="Mantou-Sans title">民眾服務信箱</div>
+              <div class="desc">
+                親愛的鄉親，每一位市民的意見都是我們社區前進的原動力
+              </div>
+              <div class="donate-button">
+                <button class="more-button">
+                  <div>填寫表單</div>
+                  <div>
+                    <svg width="50" height="50" viewBox="0 0 50 50">
+                      <!-- 线条部分 -->
+                      <line
+                        x1="10"
+                        y1="27"
+                        x2="30"
+                        y2="27"
+                        stroke="black"
+                        stroke-width="5"
+                      />
+                      <!-- 箭头部分 -->
+                      <polygon points="30,17 40,27 30,37" fill="black" />
+                    </svg>
+                  </div>
+                </button>
+                <div></div>
+                <div><img src="./images/mail.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of donate -->
+
+      <mark>
+        <div class="mark-container">
+          <div class="primary-gradient Mantou-Sans mark-text">
+            台灣的明天 喵先鋪路
+          </div>
+          <div class="mark-man">
+            <h2 class="numberIcon">3</h2>
+            <h1 class="">喵立翰 Miao Li-Han</h1>
+          </div>
+        </div>
+      </mark>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <div class="mark-man">
+          <h4 class="numberIcon">3</h4>
+          <h3 class="">喵立翰 Miao Li-Han</h3>
+        </div>
+        <div class="mark-icon">
+          <div class="footer-icon">
+            <img src="./images/facebook.png" alt="" />
+          </div>
+          <div class="footer-icon">
+            <img src="./images/instagram.png" alt="" />
+          </div>
+          <div class="footer-icon">
+            <img src="./images/youtube.png" alt="" />
+          </div>
+        </div>
+        <div class="copyRight">© 2023 喵立翰 Miao Li-Han 版權所有</div>
+      </div>
+      <div class="footer-right">
+        <h3>競選總部</h3>
+        <div class="footer-right-text">
+          辦公室地址：喵星區，毛茸茸大道88號，喵喵大樓3樓<br />
+          電話：(02) 888-5678<br />
+          電子郵件地址：meowoffice@linmeow.tw
+        </div>
+      </div>
+    </footer>
+    <button id="scrollToTopButton">
+      <svg width="50" height="50" viewBox="0 0 50 50">
+        <circle
+          cx="20"
+          cy="5"
+          r="1"
+          stroke="white"
+          stroke-width="1"
+          fill="white"
+        ></circle>
+        <line x1="20" y1="5" x2="20" y2="45" stroke="white" stroke-width="5" />
+        <line x1="2" y1="25" x2="20" y2="7" stroke="white" stroke-width="5" />
+        <line x1="38" y1="25" x2="20" y2="7" stroke="white" stroke-width="5" />
+      </svg>
+    </button>
+    <div id="modal">
+      <div class="mask"></div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3 id="modal-header-title">最新活動</h3>
+          <button id="modal-header-cancel" class="modal-header-cancel">
+            <svg width="25" height="25" viewBox="0 0 25 25">
+              <circle cx="12" cy="12" r="12" fill="black"></circle>
+              <line
+                x1="5"
+                y1="6"
+                x2="19"
+                y2="20"
+                stroke="white"
+                stroke-width="3"
+              ></line>
+              <line
+                x1="19"
+                y1="6"
+                x2="5"
+                y2="20"
+                stroke="white"
+                stroke-width="3"
+              ></line>
+            </svg>
+          </button>
+        </div>
+        <hr />
+        <div class="modal-body">
+          <div class="modal-body-left">
+            <div class="img">
+              <img id="modal-body-img" src="./images/events-left.png" alt="" />
+            </div>
+            <div id="modal-body-smallTitle" class="small-title">
+              參與台北寵物論壇，爭取貓咪友善環境
+            </div>
+            <div id="share-icon-container" class="share-icon-container">
+              <div>分享</div>
+              <div id="facebook-icon" class="share-icon">
+                <img src="./images/facebook.png" alt="" />
+              </div>
+              <div id="instagram-icon" class="share-icon">
+                <img src="./images/instagram.png" alt="" />
+              </div>
+              <div id="youtube-icon" class="share-icon">
+                <img src="./images/youtube.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-body-right">
+            <div id="modal-body-title">參與台北寵物論壇，爭取貓咪友善環境</div>
+            <div id="modal-body-date">2023/12/24</div>
+            <div id="modal-body-desc">
+              炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
+              VIP 休憩空間。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript/header.js"></script>
+  <script src="./javascript/scrolltoTop.js"></script>
+  <script src="./javascript/modal.js"></script>
+</html>
