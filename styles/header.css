@@ -73,3 +73,9 @@ header .headerLeft span {
   background: var(--bg-color-1-alpha);
   backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width: 980px) {
+  .headerCenter {
+    display: none;
+  }
+}

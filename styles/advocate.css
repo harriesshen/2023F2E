@@ -17,10 +17,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0 5%;
+  padding: 5% 5%;
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@
 .advocate-main-text {
   color: var(--primary-textColor);
   font-weight: 700;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
 }
 
 .advocate-main-text span {
@@ -47,4 +47,11 @@
 .advocate-second-text {
   font-weight: 500;
   color: var(--primary-textColor);
+}
+
+@media screen and (max-width: 980px) {
+  .advocate-card {
+    display: flex;
+    flex-direction: column;
+  }
 }

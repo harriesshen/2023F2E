@@ -9,6 +9,9 @@
 .policyIssues .policyIssues-content {
   display: flex;
   justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  gap: 24px;
   width: 100%;
 }
 
@@ -19,4 +22,18 @@
   align-items: flex-start;
   gap: 20px;
   font-weight: bold;
+  width: 100%;
+}
+
+.policyIssues .policyIssues-content .card h4 {
+  height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .policyIssues .policyIssues-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }

@@ -62,6 +62,10 @@ h6 {
   font-size: 14px;
 }
 
+.fontSize-64 {
+  font-size: 64px;
+}
+
 .primary-gradient {
   background: linear-gradient(90deg, #e6793b 1.54%, #ff4185 97.86%);
   background-clip: text;
@@ -117,7 +121,7 @@ h6 {
   border-radius: 50px;
   background: #f1f5f9;
   font-weight: 700;
-  width: 25%;
+  width: fit-content;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -174,4 +178,10 @@ h6 {
   bottom: 10%;
   right: 5%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  #scrollToTopButton {
+    bottom: 15%;
+  }
 }

@@ -23,7 +23,8 @@
 
 #modal .modal-container {
   background: #fff;
-  height: 90%;
+  /* height: 90%; */
+  height: fit-content;
   width: 70%;
   border-radius: 25px;
   top: 50%;

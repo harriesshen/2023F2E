@@ -48,3 +48,11 @@ footer {
 .footer-right .footer-right-text {
   font-weight: 500;
 }
+
+@media screen and (max-width: 980px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+  }
+}

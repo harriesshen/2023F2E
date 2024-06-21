@@ -47,3 +47,11 @@
 .donate .donate-card .donate-button .more-button {
   width: 100%;
 }
+
+@media screen and (max-width: 980px) {
+  .donate {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/donate.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/footerHeader.css" />
 
     <title>Document</title>
   </head>
@@ -42,10 +43,61 @@
         </div>
       </div>
     </header>
+    <!-- 視窗小於980px時固定在視窗底部 -->
+    <div id="footerHeader">
+      <div class="footerContainer">
+        <nav>
+          <ul>
+            <li>
+              <a href="#advocate">
+                <img src="./images/advocate-icon.png" alt="advocate-icon" />
+
+                候選人主張</a
+              >
+            </li>
+            <li>
+              <a href="#policyIssues">
+                <img
+                  src="./images/policyIssues-icon.png"
+                  alt="policyIssues-icon"
+                />
+                政策議題</a
+              >
+            </li>
+            <li>
+              <a href="#donate">
+                <img src="./images/donate-icon.png" alt="donate-icon" />
+
+                小額捐款</a
+              >
+            </li>
+            <li>
+              <a href="#donate">
+                <img src="./images/mail-icon.png" alt="mail-icon" />
+
+                民眾服務信箱</a
+              >
+            </li>
+            <li>
+              <a href="#latestEvents">
+                <img
+                  src="./images/latestEvents-icon.png"
+                  alt="latestEvents-icon"
+                />
+                最新活動</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main>
       <!-- banner -->
       <div class="banner-container">
-        <div class="primary-gradient big Mantou-Sans">台灣的明天 喵先鋪路</div>
+        <div class="primary-gradient big Mantou-Sans bannerTitle">
+          <div>台灣的明天&nbsp;</div>
+          <div>喵先鋪路</div>
+        </div>
         <div class="banner-text">
           <h3 class="left">2024 立委參選人</h3>
           <div class="right">
@@ -53,7 +105,9 @@
             <h1 class="">喵立翰 Miao Li-Han</h1>
           </div>
         </div>
-        <img src="./images/banner.png" alt="" />
+        <div class="banner-img">
+          <img src="./images/banner.png" alt="" />
+        </div>
       </div>
       <!-- End of banner -->
 
@@ -74,7 +128,7 @@
           <div class="advocate-card">
             <div class="advocate-card-left">
               <div class="section-logo">ADVOCATE</div>
-              <div class="section-title primary-gradient Mantou-Sans">
+              <div class="fontSize-64 primary-gradient Mantou-Sans">
                 候選人主張
               </div>
               <h3 class="advocate-main-text">
@@ -95,15 +149,15 @@
       </section>
       <!-- End of advocate -->
 
-      <!-- 最新消息 latestEvents -->
+      <!-- 最新活動 latestEvents -->
       <section id="latestEvents">
         <div class="latestEvents section-container">
           <div class="section-logo">LATEST EVENTS</div>
-          <div class="section-title primary-gradient Mantou-Sans">最新消息</div>
+          <div class="section-title primary-gradient Mantou-Sans">最新活動</div>
           <div class="latestEvents-card-container">
             <div
               class="latestEvents-card-left"
-              onclick="openModal('最新消息','參與台北寵物論壇，爭取貓咪友善環境','2023/12/26',
+              onclick="openModal('最新活動','參與台北寵物論壇，爭取貓咪友善環境','2023/12/26',
               'events-left.png',
               '炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的VIP休憩空間')"
             >
@@ -120,7 +174,7 @@
             <div class="latestEvents-card-right">
               <div
                 class="card"
-                onclick="openModal(`最新消息`,`掃街模式開啟！帶著你的貓耳，來和我一起走！`,
+                onclick="openModal(`最新活動`,`掃街模式開啟！帶著你的貓耳，來和我一起走！`,
                 `2023/12/24`,`events-right-1.png`,
                 `街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！`
               )"
@@ -140,7 +194,7 @@
               </div>
               <div
                 class="card"
-                onclick="openModal(`最新消息`,`收容所模特兒大比拼！`,
+                onclick="openModal(`最新活動`,`收容所模特兒大比拼！`,
                 `2023/12/20`,`events-right-2.png`,
                 `今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！`
               )"
@@ -158,7 +212,7 @@
               </div>
               <div
                 class="card"
-                onclick="openModal(`最新消息`,`參與台北寵物論壇，爭取貓咪友善環境`,
+                onclick="openModal(`最新活動`,`參與台北寵物論壇，爭取貓咪友善環境`,
               `2023/12/26`,`events-right-3.png`,
               `炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！`
             )"
@@ -207,22 +261,36 @@
           <div class="section-title primary-gradient Mantou-Sans">政策議題</div>
           <div class="policyIssues-content">
             <div class="card">
+              <!-- <div> -->
               <h4>
                 為毛孩子謀福利！<br />
                 推動寵物醫療保障方案
               </h4>
-              <div><img src="./images/policy-1.png" alt="" /></div>
+              <!-- </div> -->
+
+              <!-- <div> -->
+              <img src="./images/policy-1.png" alt="" />
+              <!-- </div> -->
             </div>
             <div class="card">
+              <!-- <div> -->
               <h4>
                 打造休閒天堂！<br />
                 推廣寵物休閒與娛樂場所
               </h4>
-              <div><img src="./images/policy-2.png" alt="" /></div>
+              <!-- </div> -->
+
+              <!-- <div> -->
+              <img src="./images/policy-2.png" alt="" />
+              <!-- </div> -->
             </div>
             <div class="card">
+              <!-- <div> -->
               <h4>推廣寵物飼養教育，讓愛更加專業</h4>
-              <div><img src="./images/policy-3.png" alt="" /></div>
+              <!-- </div> -->
+              <!-- <div> -->
+              <img src="./images/policy-3.png" alt="" />
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -294,8 +362,10 @@
 
       <mark>
         <div class="mark-container">
-          <div class="primary-gradient Mantou-Sans mark-text">
-            台灣的明天 喵先鋪路
+          <div class="primary-gradient Mantou-Sans mark-text bannerTitle">
+            <!-- 台灣的明天 喵先鋪路 -->
+            <div>台灣的明天&nbsp;</div>
+            <div>喵先鋪路</div>
           </div>
           <div class="mark-man">
             <h2 class="numberIcon">3</h2>
@@ -332,6 +402,7 @@
         </div>
       </div>
     </footer>
+
     <button id="scrollToTopButton">
       <svg width="50" height="50" viewBox="0 0 50 50">
         <circle

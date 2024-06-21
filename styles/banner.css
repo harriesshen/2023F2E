@@ -11,6 +11,7 @@
 
 .banner-text {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -39,8 +40,32 @@
   gap: 16px;
 }
 
-.banner-container img {
-  width: 723px;
-  height: 537px;
-  object-fit: cover;
+.banner-container .banner-img {
+  width: 50%;
+  height: 50%;
+  /* width: 723px; */
+  /* height: 537px; */
+  /* object-fit: cover; */
+}
+
+.bannerTitle {
+  /* word-break: normal; */
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .bannerTitle {
+    /* word-break: break-all; */
+    display: block;
+  }
+  .banner-text {
+    flex-direction: column;
+  }
+  .banner-text .right {
+    width: fit-content;
+  }
+  .banner-text .left {
+    width: fit-content;
+  }
 }

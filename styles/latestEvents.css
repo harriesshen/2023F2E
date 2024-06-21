@@ -63,3 +63,10 @@ img {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+
+@media screen and (max-width: 980px) {
+  .latestEvents-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
