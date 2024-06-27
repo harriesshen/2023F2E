@@ -70,13 +70,3 @@
     display: none;
   }
 }
-
-@keyframes test {
-  0%,
-  100% {
-    border-top-width: 2px;
-  }
-  50% {
-    border-top-width: 20px;
-  }
-}
