@@ -1,2 +1,3 @@
 # 2023F2E
-20240606 2023F2E 刻板練習
+20240606 2023F2E 刻板練習  
+模仿來源：https://www.figma.com/design/DCnuTZQ00D5VHiDkBLhxQ3/2023-The-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=4690-1607&t=Oum923j4w6YxCqFK-0  
